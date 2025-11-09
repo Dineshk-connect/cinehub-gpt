@@ -14,12 +14,12 @@ const Body = () => {
       element: <Browse />,
     },
   ]);
+return (
+  <div className="w-full h-full overflow-x-hidden overflow-y-auto hide-scrollbar bg-black">
+    <RouterProvider router={appRouter} />
+  </div>
+);
 
-  return (
-    <div>
-      <RouterProvider router={appRouter} />
-    </div>
-  );
 };
 
 export default Body;
