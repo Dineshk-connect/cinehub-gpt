@@ -15,7 +15,7 @@ const Body = () => {
     },
   ]);
 return (
-  <div className="w-full h-full overflow-x-hidden overflow-y-auto hide-scrollbar bg-black">
+  <div className="w-full h-full overflow-x-hidden overflow-y-auto hide-scrollbar">
     <RouterProvider router={appRouter} />
   </div>
 );
