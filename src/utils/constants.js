@@ -3,22 +3,23 @@ export const LOGO =
 
 export const USER_AVATAR =
   "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
-
 export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOTkxNmFiYTkxNjE0OWVmYTZiZDY5NWVlNWVkMWNjZCIsIm5iZiI6MTc2MjU4NjI4MC42OTEsInN1YiI6IjY5MGVlZWE4YTRhMWM5NmNjODMxYTk1MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KNJedQrj6tKcVwe3Plk1ArDs0IND58uXrOj2yXLL4n4",
+    Authorization: `Bearer ${process.env.REACT_APP_TMDB_KEY}`,
   },
 };
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
 
+export const BG_URL =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/a92a67ee-cd07-46a8-8354-c431a96a97b0/web/IN-en-20251103-TRIFECTA-perspective_8a65e995-9926-414c-83c5-f7cc9af10871_large.jpg";
 
-export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500";
-
-export const BG_URL="https://assets.nflxext.com/ffe/siteui/vlv3/a92a67ee-cd07-46a8-8354-c431a96a97b0/web/IN-en-20251103-TRIFECTA-perspective_8a65e995-9926-414c-83c5-f7cc9af10871_large.jpg";
-
-export const SUPPORTED_LANGUAGES=[{identifier:"en",name:"English"},
-  {identifier:"hindi",name:"Hindi"},
-  {identifier:"spanish",name:"Spanish"}
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
 ];
+
+
+export const GEMINI_KEY = process.env.REACT_APP_GEMINI_KEY;
